@@ -8,9 +8,6 @@ import java.util.Properties;
 
 import javax.annotation.PostConstruct;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 public class MainBean implements java.io.Serializable {
 
     /**
@@ -18,8 +15,7 @@ public class MainBean implements java.io.Serializable {
      */
     private static final long serialVersionUID = 3095593138292372749L;
 
-    private static final Logger LOG = LoggerFactory.getLogger(MainBean.class);
-
+    // TODO private static final Logger LOG = LoggerFactory.getLogger(MainBean.class);
 
     public static final String MAIN_TITLE = "Main";
     public static final String GENERAL_TITLE_PREFIX = "DelorExchange :: ";
