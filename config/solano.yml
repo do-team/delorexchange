@@ -2,3 +2,4 @@ java:
   java_version: java-7-openjdk
   maven_version: '3.3.3'
 tests:
+- ls -l /tmp
