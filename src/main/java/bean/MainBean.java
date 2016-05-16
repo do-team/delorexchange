@@ -45,9 +45,9 @@ public class MainBean implements java.io.Serializable {
         try {
             configFile.load(getClass().getClassLoader().getResourceAsStream("delorexchange.properties"));
             version = configFile.getProperty("buildVersion");
-            LOG.debug("Version : {}", version);
+            // TOOD LOG.debug("Version : {}", version);
         } catch (IOException ex) {
-            LOG.error(ex.getLocalizedMessage());
+            // TODO LOG.error(ex.getLocalizedMessage());
             ex.printStackTrace();
         }
         return version;
