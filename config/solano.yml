@@ -6,8 +6,8 @@
 #    php_version: 5.5                       # IMPORTANT: set PHP version 5.5.16 -> 5.5
 # python:
 #    python_version: 2.7                    # IMPORTANT: set python version 2.7.3 -> 2.7
-# java:
-#   java_version: 'java-7-openjdk'
+ java:
+   java_version: 'java-7-openjdk'
 #   maven_version: '3.2.1'          # Or: gradle_version
 #
 # See language specific guides for iojs, nodejs, and others
