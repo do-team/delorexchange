@@ -17,7 +17,7 @@ public class MainBean implements java.io.Serializable {
 
     // TODO private static final Logger LOG = LoggerFactory.getLogger(MainBean.class);
 
-    public static final String MAIN_TITLE = "Main ";
+    public static final String MAIN_TITLE = "Main";
     public static final String GENERAL_TITLE_PREFIX = "DelorExchange :: ";
 
 
