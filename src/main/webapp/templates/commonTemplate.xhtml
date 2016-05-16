@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xml:lang="en" lang="en">
+<h:head>
+    <!-- Page Head -->
+    <div class="head">
+        <ui:insert name="head" ></ui:insert>
+    </div> 
+</h:head>
+    
+<h:body>
+	<!-- Page Body -->
+	<div class="content">
+		<!-- client page content -->
+		<ui:insert name="content" ></ui:insert>
+        <br/>
+        <!-- <h:outputText value= "Page rendered at " style="font-size:12px;"/>
+        <h:outputText value="  currentDate " style="font-size:13px;" />
+        <br /> -->
+        <h:form>
+            <h:panelGrid columns="3" id="grid_main" styleClass="topAligned">
+                <h:outputText value="remote user : " style="font-size:10px;"/>
+                <h:outputText value="#{request.remoteUser}"/>
+            </h:panelGrid>
+        </h:form>
+        <br />
+        <h:outputText value="DelorExchange version #{mainBean.getVersion()}" style="font-size:10px;"/>
+	</div>
+</h:body>
+</html>

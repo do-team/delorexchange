@@ -1,0 +1,191 @@
+.errorMessage {
+	color: red;
+	font-weight: bold;
+}
+
+.infoMessage {
+	color: green;
+	font-weight: bold;
+}
+
+.topLeftPadded {
+	vertical-align:top;
+	padding-left: 10px;
+}
+
+.centerPadded {
+	vertical-align:middle;
+	text-align: center;
+	padding-left: 10px;
+}
+
+.maxWidthDataTable{
+	max-width:450px;
+}
+
+.maxWidthColumn{
+	width:200px;
+}
+
+.maxWidthPerCent{
+	width:100%;
+}
+
+.maxWidthProgressBar{
+	width:500px;
+}
+
+.noBorder{
+	padding-left:0px;	
+}
+
+.topAligned {
+	vertical-align:top;
+}
+
+.pageTitle{
+    color:white;
+    background-color:goldenrod;
+}
+
+.body1 {
+    height: 800px;
+    overflow: auto;
+}
+.body2 {
+    height: 300px;
+    overflow: auto;
+}
+.richSelectStyleWidth1 input{
+   width: 200px;
+}
+.richSelectStyleWidth2 input{
+   width: 540px;
+ }
+.richSelectStyleWidth3 input{
+   width: 50px;
+}
+
+.richSelectStyleWidth4 input{
+   width: 70px;
+}
+
+.richSelectStyleWidth5 input{
+   width: 20px;
+}
+
+.rightAligned th{
+	text-align:right;
+}
+
+.leftAligned th{
+	text-align:left;
+}
+
+.rightAligned {
+	text-align:right;
+}
+
+.leftAligned {
+	text-align:left;
+}
+
+.topAlignedCC td {
+	vertical-align:top;
+}
+
+.bottomAlignedCC td {
+	vertical-align:bottom;
+}
+table.gridtable{
+    width:100%;
+   
+    border-width: 1px;
+	border-color: #BED6F8;
+	border-collapse: collapse;
+}
+
+table.gridtable td {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #BED6F8;
+	vertical-align:top;
+}
+
+table.bottomAlignedTable{
+    border-width: 0px;
+    border-style: none;
+    border-collapse: collapse;
+}
+table.bottomAlignedTable td{
+    border-width: 0px;
+    border-style: none;
+    border-collapse: collapse;
+    vertical-align:bottom;
+}
+
+table.noBorderTable{
+    border-width: 0px;
+    border-style: none;
+    border-collapse: collapse;
+}
+table.noBorderTable td{
+    border-width: 0px;
+    border-style: none;
+    border-collapse: collapse;
+}
+
+table.rightAlignedTable{
+    border-width: 0px;
+    border-style: none;
+    border-collapse: collapse;
+}
+table.rightAlignedTable td{
+    border-width: 0px;
+    border-style: none;
+    border-collapse: collapse;
+    text-align:right;
+}
+
+td.bordered{
+    border: 1px solid #BED6F8;
+}
+
+td.borderedLeft{
+    border: 1px solid #BED6F8;
+   
+}
+td.borderedCenter{
+    border: 1px solid #BED6F8;
+    
+}
+td.borderedRight{
+    border: 1px solid #BED6F8;
+   
+}
+
+td.middleAligned {
+    vertical-align:middle;
+}
+td.bottomAligned {
+    vertical-align:bottom;
+}
+td.bottomRightAligned {
+    vertical-align:bottom;
+    text-align:right;
+}
+
+.panelHeaderCenter {
+    text-align: center;
+}
+.panelHeaderCenterWarn {
+    text-align: center;
+    background: red;
+    color: yellow;
+    font-weight: bold;
+}
+
+.richSelectStyleWidth1 input{
+   width: 200px;
+   vertical-align:bottom_bottomAligned;
+}

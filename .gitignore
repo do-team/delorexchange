@@ -1,0 +1,15 @@
+syntax: glob
+build/*
+.settings/*
+.classpath
+.project
+target/*
+test-output/*
+.metadata/*
+.myumldata
+.idea/*
+*.iml
+velocity.log
+bin/*
+/target/
+.settings
