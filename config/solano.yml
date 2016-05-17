@@ -3,3 +3,11 @@ java:
   maven_version: '3.3.3'
 tests:
 - ls -l /tmp
+deploy:
+  amazon:
+    application_name: DeloDeploy
+    app_spec_template: appspec.yml
+    deploy_mapping:
+    - branch: master
+      action: deploy
+      deployment_group: grp2
