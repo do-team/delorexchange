@@ -4,12 +4,12 @@ files:
    - source: /
      destination: /var/www/html
      source: /
-     destination: //usr/share/tomcat8/webapp
+     destination: /usr/share/tomcat8/webapp
 permissions:
    - object: /var/www/html
      pattern: "**"
-     owner: apache
-     group: apache
+     owner: tomcat
+     group: tomcat
      mode: 755
      type:
        - file
