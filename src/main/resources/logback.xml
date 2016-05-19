@@ -12,7 +12,7 @@
 
 	<!-- Send debug messages to a file at "c:/jcg.log" -->
 	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>\\D:\delorexchange\delorexchange-logfile.log</file>
+        <file>delorexchange\delorexchange-logfile.log</file>
 		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
 			<Pattern>%d{yyyy-MM-dd_HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
 		</encoder>

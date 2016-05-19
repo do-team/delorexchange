@@ -204,11 +204,11 @@
       <version>${org.richfaces.bom.version}</version>
     </dependency>
     -->
-    <dependency>
+    <!-- <dependency>
       <groupId>com.microsoft.sqlserver</groupId>
       <artifactId>sqljdbc</artifactId>
       <version>4.1</version>
-    </dependency>
+    </dependency> -->
     <dependency>
       <groupId>joda-time</groupId>
       <artifactId>joda-time</artifactId>
