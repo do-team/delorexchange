@@ -3,9 +3,6 @@
  */
 package bean;
 
-import java.io.IOException;
-import java.util.Properties;
-
 import javax.annotation.PostConstruct;
 
 public class MainBean implements java.io.Serializable {
@@ -32,20 +29,5 @@ public class MainBean implements java.io.Serializable {
     
     public String getMainTitle() {
         return GENERAL_TITLE_PREFIX + MAIN_TITLE;
-    }
-
-    public String getVersion() {
-        String version = "";
-
-        Properties configFile = new Properties();
-        try {
-            configFile.load(getClass().getClassLoader().getResourceAsStream("delorexchange.properties"));
-            version = configFile.getProperty("buildVersion");
-            // TOOD LOG.debug("Version : {}", version);
-        } catch (IOException ex) {
-            // TODO LOG.error(ex.getLocalizedMessage());
-            ex.printStackTrace();
-        }
-        return version;
     }
 }
