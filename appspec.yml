@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
    - source: target/delorexchange.war
-     destination: /usr/share/tomcat8/webapp
+     destination: /var/lib/tomcat8/webapps
 permissions:
-   - object: /usr/share/tomcat8/webapp
+   - object: /var/lib/tomcat8/webapps
      pattern: "**"
      owner: tomcat
      group: tomcat
