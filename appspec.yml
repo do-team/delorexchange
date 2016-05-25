@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-   - source: target/delorexchange.war
+   - source:
      destination: /var/lib/tomcat8/webapps
 permissions:
    - object: /var/lib/tomcat8/webapps
