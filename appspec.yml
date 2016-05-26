@@ -7,4 +7,4 @@ hooks:
  ApplicationStop:
    - location: cleanup-tomcat.sh
  ApplicationStart:
-   - location: start-tomcat.sh
+   - location: startup.sh
