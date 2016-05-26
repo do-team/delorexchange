@@ -5,8 +5,8 @@ files:
      destination: /var/lib/tomcat8/webapps
 hooks:
   BeforeInstall:
-    - location: sudo service tomcat8 stop
+    - location: /bin/shutdown.sh
       runas : root
   AfterInstall:
-    - location: sudo service tomcat8 start
+    - location: /bin/startup.sh
       runas : root
