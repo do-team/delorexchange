@@ -5,9 +5,8 @@ files:
      destination: /var/lib/tomcat8/webapps
 hooks:
   BeforeInstall:
-    - location: stop_server_api.sh
+    - location: sudo service tomcat8 stop
       runas : root
-    - location: deregister_from_elb.sh
   AfterInstall:
-    - location: start_server.sh
-    - location: register_with_elb.sh
+    - location: sudo service tomcat8 start
+      runas : root
