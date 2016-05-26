@@ -5,6 +5,6 @@ files:
      destination: /var/lib/tomcat8/webapps
 hooks:
  ApplicationStop:
-   - location: shutdown.sh
+   - location: /usr/share/tomcat8/bin/shutdown.sh
  ApplicationStart:
-   - location: startup.sh
+   - location: /usr/share/tomcat8/bin/startup.sh
