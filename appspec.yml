@@ -3,8 +3,3 @@ os: linux
 files:
    - source: /
      destination: /var/lib/tomcat8/webapps
-hooks:
- ApplicationStop:
-   - location: /usr/share/tomcat8/bin/shutdown.sh
- ApplicationStart:
-   - location: /usr/share/tomcat8/bin/startup.sh
