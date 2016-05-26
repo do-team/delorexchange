@@ -1,13 +1,5 @@
 version: 0.0
 os: linux
 files:
-   - source:
+   - source: delorexchange.war
      destination: /var/lib/tomcat8/webapps
-permissions:
-   - object: /var/lib/tomcat8/webapps
-     pattern: "**"
-     owner: tomcat
-     group: tomcat
-     mode: 755
-     type:
-       - file
