@@ -1,5 +1,5 @@
 version: 0.0
 os: linux
 files:
-   - source: delorexchange.war
+   - source:
      destination: /var/lib/tomcat8/webapps
