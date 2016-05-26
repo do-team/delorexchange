@@ -15,14 +15,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
-	<!-- 
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	 -->
   </head>
   
   <body>
     <table>
-        <caption>DelorExchange :: Welcome Page ONE ONE ONE</caption>
+        <caption>DelorExchange :: Welcome Page ONE</caption>
         <tr><td></td></tr>
         <tr><td><a href="main.faces">Main</a></td></tr>
     </table>
