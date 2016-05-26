@@ -3,3 +3,11 @@ os: linux
 files:
    - source: /
      destination: /var/lib/tomcat8/webapps
+hooks:
+  BeforeInstall:
+    - location: stop_server_api.sh
+      runas : root
+    - location: deregister_from_elb.sh
+  AfterInstall:
+    - location: start_server.sh
+    - location: register_with_elb.sh
