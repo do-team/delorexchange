@@ -4,9 +4,7 @@ files:
    - source: /
      destination: /var/lib/tomcat8/webapps
 hooks:
-  BeforeInstall:
-    - location: /bin/shutdown.sh
-      runas : root
-  AfterInstall:
-    - location: /bin/startup.sh
-      runas : root
+ ApplicationStop:
+   - location: cleanup-tomcat.sh
+ ApplicationStart:
+   - location: start-tomcat.sh
