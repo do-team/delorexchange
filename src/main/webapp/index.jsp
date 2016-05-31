@@ -21,7 +21,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <table>
         <caption>DelorExchange :: Welcome Page ONE TWO THREE FOUR</caption>
         <tr><td></td></tr>
-        <tr><td><a href="main.faces">Main</a></td></tr>
+        <tr><td><a href="./main.faces">Main</a></td></tr>
     </table>
   </body>
 </html>

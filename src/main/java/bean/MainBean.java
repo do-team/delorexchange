@@ -3,9 +3,17 @@
  */
 package bean;
 
+import java.util.List;
+
 import javax.annotation.PostConstruct;
 
+import model.User;
+import service.UserService;
+
 public class MainBean implements java.io.Serializable {
+
+    UserService userService;
+
 
     /**
      * 
@@ -24,10 +32,16 @@ public class MainBean implements java.io.Serializable {
 
     @PostConstruct
     public void init() {
-        
     }
     
     public String getMainTitle() {
-        return GENERAL_TITLE_PREFIX + MAIN_TITLE;
+        List<User> users = userService.listAllUsers();
+        int i = users.size();
+
+        return GENERAL_TITLE_PREFIX + MAIN_TITLE + " size:" + i;
+    }
+
+    public void setUserService(UserService userService) {
+        this.userService = userService;
     }
 }
