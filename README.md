@@ -1,4 +1,4 @@
-# delorexhange
+# delorexchange
 Micro exchange for AWS testing
 
 Next steps:
@@ -10,5 +10,3 @@ Changelog:
 auto deploy to the cloud - including maven build via jenkins, all in AWS
 Hello World Java app - done by martin
 Tomcat installation - we used Cloud Formation template
-
-TEST
