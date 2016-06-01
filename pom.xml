@@ -78,6 +78,7 @@
                 <version>2.4</version>
                 <configuration>
                     <version>3.0</version>
+                    <webappDirectory>/var/lib/tomcat8/webapps/delorexchange</webappDirectory>
                 </configuration>
             </plugin>
         </plugins>
