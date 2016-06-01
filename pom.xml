@@ -88,4 +88,12 @@
             </resource>
         </resources>
     </build>
+    <profiles>
+    <profile>
+        <id>OtherDir</id>
+        <build>
+            <directory>/var/lib/jenkins/workspace</directory>
+        </build>
+    </profile>
+</profiles>
 </project>
