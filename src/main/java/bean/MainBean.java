@@ -3,6 +3,7 @@
  */
 package bean;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -13,6 +14,7 @@ import service.UserService;
 public class MainBean implements java.io.Serializable {
 
     UserService userService;
+    List<User> users;
 
 
     /**
@@ -35,13 +37,19 @@ public class MainBean implements java.io.Serializable {
     }
     
     public String getMainTitle() {
-        List<User> users = userService.listAllUsers();
-        int i = users.size();
-
-        return GENERAL_TITLE_PREFIX + MAIN_TITLE + " size:" + i;
+        return GENERAL_TITLE_PREFIX + MAIN_TITLE;
     }
 
     public void setUserService(UserService userService) {
         this.userService = userService;
     }
+
+    public List<User> getUsers() {
+        if (users == null) {
+            users = new ArrayList<User>();
+        }
+        users = userService.listAllUsers();
+        return users;
+    }
+
 }

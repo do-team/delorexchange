@@ -13,7 +13,7 @@ import model.User;
  */
 public class UserMapper implements RowMapper<User> {
 
-    public static final String tableName = "User";
+    public static final String tableName = "users";
 
     public enum Column {
         //please use names and not numbers in your SQL. Numbers here are for your reference only.

@@ -3,6 +3,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:h="http://java.sun.com/jsf/html"
     xmlns:f="http://java.sun.com/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+    xmlns:a4j="http://richfaces.org/a4j" xmlns:rich="http://richfaces.org/rich" xml:lang="en" lang="en"
     >
 <h:head>
     <title>#{mainBean.mainTitle}</title>
@@ -13,6 +14,24 @@
 <h:body>
     <h:form>
         <h:outputText value="#{mainBean.mainTitle}" />
+        
+        <rich:dataTable id="mainDataTable" value="#{mainBean.users}" rowKeyVar="rowId" var="user">
+            <f:facet name="header">
+                <h:outputText value="USERS" />
+            </f:facet>
+            <rich:column style="width:200px">
+                <f:facet name="header">
+                    <h:outputText value="row" />
+                </f:facet>
+                <h:outputText value="#{rowId+1}" />
+            </rich:column>
+            <rich:column style="width:200px">
+                <f:facet name="header">
+                    <h:outputText value="userId" />
+                </f:facet>
+                <h:outputText value="#{user.userId}" />
+            </rich:column>
+        </rich:dataTable>
     </h:form>
 </h:body>
 </html>

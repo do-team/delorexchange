@@ -14,10 +14,10 @@ public class UserDAOImpl extends AbstractDAO implements UserDAO {
 
     @Override
     public List<User> listAllUsers() {
-        //String query = "SELECT * FROM " + UserMapper.tableName;
-        String query = "SELECT count(*) as " + UserMapper.Column.USER_ID.getName()
-                + " FROM INFORMATION_SCHEMA.TABLES";
+        String query = "SELECT " + UserMapper.Column.USER_ID.getName()
+                + " FROM " + UserMapper.tableName;
         List<User> result = templateObject.query(query, new UserMapper());
+
         return result;
     }
 }
