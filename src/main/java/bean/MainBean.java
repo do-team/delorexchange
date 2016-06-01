@@ -35,10 +35,10 @@ public class MainBean implements java.io.Serializable {
     }
     
     public String getMainTitle() {
-        List<User> users = userService.listAllUsers();
-        int i = users.size();
+        /*List<User> users = userService.listAllUsers();
+        int i = users.size();*/
 
-        return GENERAL_TITLE_PREFIX + MAIN_TITLE + " size:" + i;
+        return GENERAL_TITLE_PREFIX + MAIN_TITLE;
     }
 
     public void setUserService(UserService userService) {
