@@ -6,5 +6,7 @@ files:
 hooks:
    ApplicationStop:
      - location: scripts/stop.sh
+   AfterInstall:
+     -location: script/copywar.sh
    ApplicationStart:
    - location: scripts/start.sh
