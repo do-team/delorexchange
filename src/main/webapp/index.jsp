@@ -19,9 +19,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     <table>
-        <caption>DelorExchange :: Welcome Page ONE TWO THREE FOUR</caption>
+        <caption>DelorExchange :: Welcome Page</caption>
         <tr><td></td></tr>
-        <tr><td><a href="./main.faces">Main</a></td></tr>
+        <tr><td><a href="./main.faces">Show me content of MySQL database (as a service, of course!)</a></td></tr>
     </table>
   </body>
 </html>
