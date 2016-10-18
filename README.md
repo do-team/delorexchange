@@ -1,5 +1,5 @@
 # delorexchange
-Micro exchange for AWS testing
+Micro exchange for AWS testing TEWST
 
 [![Build Status](https://travis-ci.org/do-team/delorexchange.svg?branch=master)](https://travis-ci.org/do-team/delorexchange)
 
